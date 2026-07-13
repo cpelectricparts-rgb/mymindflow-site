@@ -1,225 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Finanças & Investimentos</title>
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI,Arial,sans-serif;
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
+body{background:#081421;color:#fff;display:flex;min-height:100vh}
+aside{width:260px;background:#0d1d2f;border-right:1px solid #1b3552;padding:28px}
+.logo{font-size:28px;font-weight:700;margin-bottom:40px}
+.logo span{color:#3fd3ff}
+nav a{display:block;text-decoration:none;color:#d8e4ef;padding:14px 18px;border-radius:12px;margin-bottom:8px}
+nav a.active,nav a:hover{background:#1d5cff;color:#fff}
+main{flex:1;padding:32px}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.user{background:#12263d;padding:10px 18px;border-radius:24px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:24px}
+.card{background:#10233a;border:1px solid #21486f;border-radius:18px;padding:22px}
+.card h3{font-size:14px;color:#8db6ff;margin-bottom:10px}
+.value{font-size:30px;font-weight:700}
+.content{display:grid;grid-template-columns:2fr 1fr;gap:20px}
+.panel{background:#10233a;border:1px solid #21486f;border-radius:18px;padding:24px}
+.placeholder{height:260px;border:2px dashed #315c8d;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#8ca4bc}
+.ai{line-height:1.8;color:#d6e4f0}
+@media(max-width:1100px){
+.grid{grid-template-columns:repeat(2,1fr)}
+.content{grid-template-columns:1fr}
+aside{width:220px}
 }
-
-body{
-
-background:#071321;
-color:#fff;
-display:flex;
-height:100vh;
-
+@media(max-width:700px){
+body{flex-direction:column}
+aside{width:100%}
+.grid{grid-template-columns:1fr}
 }
-
-aside{
-
-width:260px;
-background:#0d1f36;
-border-right:1px solid #15355d;
-padding:25px;
-
-}
-
-.logo{
-
-font-size:28px;
-font-weight:700;
-margin-bottom:40px;
-
-}
-
-.logo span{
-
-color:#35d0ff;
-
-}
-
-.menu{
-
-display:flex;
-flex-direction:column;
-gap:12px;
-
-}
-
-.menu a{
-
-text-decoration:none;
-color:#d8e6f4;
-padding:14px 18px;
-border-radius:10px;
-transition:.25s;
-
-}
-
-.menu a:hover{
-
-background:#17365f;
-
-}
-
-.menu a.active{
-
-background:#2c6fff;
-color:white;
-
-}
-
-main{
-
-flex:1;
-padding:40px;
-
-}
-
-.top{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin-bottom:35px;
-
-}
-
-.user{
-
-background:#102746;
-padding:10px 18px;
-border-radius:30px;
-
-}
-
-.cards{
-
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-
-}
-
-.card{
-
-background:#0f2748;
-border:1px solid #1d4678;
-border-radius:18px;
-padding:25px;
-
-}
-
-.card h3{
-
-font-size:15px;
-color:#8ab6ff;
-margin-bottom:15px;
-
-}
-
-.card .valor{
-
-font-size:34px;
-font-weight:700;
-
-}
-
 </style>
-
 </head>
-
 <body>
-
 <aside>
-
-<div class="logo">
-MY <span>FINANCE</span>
-</div>
-
-<div class="menu">
-
+<div class="logo">MY <span>FINANCE</span></div>
+<nav>
 <a class="active" href="#">🏠 Dashboard</a>
-
-<a href="fluxo.html">💰 Fluxo de Caixa</a>
-
+<a href="#">💰 Fluxo de Caixa</a>
 <a href="#">💳 Contas</a>
-
 <a href="#">📈 Investimentos</a>
-
 <a href="#">🏠 Patrimônio</a>
-
 <a href="#">📊 Relatórios</a>
-
 <a href="#">🤖 IA Financeira</a>
-
 <a href="#">⚙ Configurações</a>
-
-</div>
-
+</nav>
 </aside>
-
 <main>
+<header>
+<div>
+<h1>Dashboard Financeiro</h1>
+<p>Visão geral do patrimônio e desempenho</p>
+</div>
+<div class="user">👤 Cleiton Ribeiro</div>
+</header>
 
-<div class="top">
+<section class="grid">
+<div class="card"><h3>Patrimônio Total</h3><div class="value">R$ 0,00</div></div>
+<div class="card"><h3>Saldo em Contas</h3><div class="value">R$ 0,00</div></div>
+<div class="card"><h3>Investimentos</h3><div class="value">R$ 0,00</div></div>
+<div class="card"><h3>Resultado do Mês</h3><div class="value">R$ 0,00</div></div>
+<div class="card"><h3>Receitas</h3><div class="value">R$ 0,00</div></div>
+<div class="card"><h3>Despesas</h3><div class="value">R$ 0,00</div></div>
+<div class="card"><h3>Economia</h3><div class="value">R$ 0,00</div></div>
+<div class="card"><h3>Patrimônio Acumulado</h3><div class="value">R$ 0,00</div></div>
+</section>
 
-<h1>Dashboard</h1>
-
-<div class="user">
-👤 Cleiton Ribeiro
+<section class="content">
+<div class="panel">
+<h2>Evolução Patrimonial</h2>
+<div class="placeholder">Gráfico (V2)</div>
+<br>
+<h2>Receitas × Despesas</h2>
+<div class="placeholder">Gráfico (V2)</div>
 </div>
 
+<div class="panel">
+<h2>🤖 IA Financeira</h2>
+<div class="ai">
+<p>• Bem-vindo ao My Finance.</p>
+<p>• Os diagnósticos aparecerão aqui.</p>
+<p>• Recomendações de economia.</p>
+<p>• Projeções financeiras.</p>
+<p>• Alertas inteligentes.</p>
 </div>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Patrimônio</h3>
-
-<div class="valor">R$ 0,00</div>
-
 </div>
-
-<div class="card">
-
-<h3>Saldo</h3>
-
-<div class="valor">R$ 0,00</div>
-
-</div>
-
-<div class="card">
-
-<h3>Investimentos</h3>
-
-<div class="valor">R$ 0,00</div>
-
-</div>
-
-<div class="card">
-
-<h3>Resultado</h3>
-
-<div class="valor">R$ 0,00</div>
-
-</div>
-
-</div>
-
+</section>
 </main>
-
 </body>
-
 </html>
