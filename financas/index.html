@@ -1,53 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finanças & Investimentos</title>
 
-    <style>
-        body{
-            margin:0;
-            background:#071321;
-            color:#fff;
-            font-family:Arial,Helvetica,sans-serif;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .card{
-            background:#0d2242;
-            border:1px solid #1d4f91;
-            border-radius:18px;
-            padding:50px;
-            text-align:center;
-            width:600px;
-        }
+<title>Finanças & Investimentos</title>
 
-        h1{
-            margin:0;
-            font-size:42px;
-        }
+<style>
 
-        p{
-            color:#b8c7d9;
-            margin-top:15px;
-        }
-    </style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial,sans-serif;
+}
+
+body{
+
+background:#071321;
+color:#fff;
+display:flex;
+height:100vh;
+
+}
+
+aside{
+
+width:260px;
+background:#0d1f36;
+border-right:1px solid #15355d;
+padding:25px;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:700;
+margin-bottom:40px;
+
+}
+
+.logo span{
+
+color:#35d0ff;
+
+}
+
+.menu{
+
+display:flex;
+flex-direction:column;
+gap:12px;
+
+}
+
+.menu a{
+
+text-decoration:none;
+color:#d8e6f4;
+padding:14px 18px;
+border-radius:10px;
+transition:.25s;
+
+}
+
+.menu a:hover{
+
+background:#17365f;
+
+}
+
+.menu a.active{
+
+background:#2c6fff;
+color:white;
+
+}
+
+main{
+
+flex:1;
+padding:40px;
+
+}
+
+.top{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:35px;
+
+}
+
+.user{
+
+background:#102746;
+padding:10px 18px;
+border-radius:30px;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+
+}
+
+.card{
+
+background:#0f2748;
+border:1px solid #1d4678;
+border-radius:18px;
+padding:25px;
+
+}
+
+.card h3{
+
+font-size:15px;
+color:#8ab6ff;
+margin-bottom:15px;
+
+}
+
+.card .valor{
+
+font-size:34px;
+font-weight:700;
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<div class="card">
+<aside>
 
-<h1>💰 Finanças & Investimentos</h1>
+<div class="logo">
+MY <span>FINANCE</span>
+</div>
 
-<p>Primeiro módulo do MyMindFlow.</p>
+<div class="menu">
+
+<a class="active" href="#">🏠 Dashboard</a>
+
+<a href="fluxo.html">💰 Fluxo de Caixa</a>
+
+<a href="#">💳 Contas</a>
+
+<a href="#">📈 Investimentos</a>
+
+<a href="#">🏠 Patrimônio</a>
+
+<a href="#">📊 Relatórios</a>
+
+<a href="#">🤖 IA Financeira</a>
+
+<a href="#">⚙ Configurações</a>
 
 </div>
 
+</aside>
+
+<main>
+
+<div class="top">
+
+<h1>Dashboard</h1>
+
+<div class="user">
+👤 Cleiton Ribeiro
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Patrimônio</h3>
+
+<div class="valor">R$ 0,00</div>
+
+</div>
+
+<div class="card">
+
+<h3>Saldo</h3>
+
+<div class="valor">R$ 0,00</div>
+
+</div>
+
+<div class="card">
+
+<h3>Investimentos</h3>
+
+<div class="valor">R$ 0,00</div>
+
+</div>
+
+<div class="card">
+
+<h3>Resultado</h3>
+
+<div class="valor">R$ 0,00</div>
+
+</div>
+
+</div>
+
+</main>
+
 </body>
+
 </html>
