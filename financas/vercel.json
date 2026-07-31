@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/financas",
+      "destination": "https://n8n-jooz.srv1716456.hstgr.cloud/webhook/73c77a7d-6ea7-413b-87eb-424aa3a66623"
+    },
+    {
+      "source": "/financas/",
+      "destination": "https://n8n-jooz.srv1716456.hstgr.cloud/webhook/73c77a7d-6ea7-413b-87eb-424aa3a66623"
+    }
+  ]
+}
